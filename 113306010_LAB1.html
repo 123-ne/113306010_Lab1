@@ -22,6 +22,12 @@
             text-align: left;
             vertical-align: top;
         }
+        .caption {
+            text-align: center; /* Centering the caption */
+        }
+        .full-width {
+            width: 100%; /* Full width for input fields */
+        }
     </style>
 </head>
 <body>
@@ -61,8 +67,9 @@
         </tr>
         
         <tr>
-            <td colspan="2">Email:
-                <input type="email" name="email" style="width: 100%;">
+            <td colspan="2">
+                Email:
+                <input type="email" name="email" class="full-width">
             </td>
         </tr>
         
@@ -100,9 +107,9 @@
         
         <!-- Final Row -->
         <tr>
-            <td colspan="3" style="text-align: center;">
-                <button type="提交">Submit</button>
-                <button type="重設">Reset</button>
+            <td colspan="3" style="text-align: left;">
+                <button type="submit">提交</button>
+                <button type="reset">重設</button>
             </td>
         </tr>
     </table>
