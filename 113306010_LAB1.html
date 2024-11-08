@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        /* 頁面主要樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        
+        /* 表格樣式 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        /* 標題樣式 */
+        .caption {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        /* 個人照片樣式 */
+        .profile-photo {
+            width: 100px; /* 設定圖片寬度 */
+            height: auto; /* 高度隨寬度自動縮放 */
+            display: block;
+            margin: 0; /* 移除圖片邊距 */
+        }
+    </style>
+</head>
+<body>
+
+    
+    
+    <table>
+        <tr>
+            <th colspan="3" class="caption">About-113306010</th>
+        </tr>
+        <tr>
+            <td rowspan="3" style="vertical-align: top;">
+                <img src=https://github.com/123-ne/113306010_Lab1/raw/main/NE.jpg class="profile-photo" alt="personal photo">
+                <p>Personal Photo</p>
+            </td>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>County:</td>
+            <td>
+                <select name="county">
+                    <option value="Taipei">Taipei</option>
+                    <option value="Taichung">Taichung</option>
+                    <option value="Kaohsiung">Kaohsiung</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td>Hobby</td>
+            <td colspan="2">
+                <input type="checkbox" name="hobby" value="Swimming"> Swimming
+                <input type="checkbox" name="hobby" value="Volleyball"> Volleyball
+                <input type="checkbox" name="hobby" value="Movie"> Movie
+                <input type="checkbox" name="hobby" value="Game"> Game
+                <input type="checkbox" name="hobby" value="Sleep"> Sleep
+            </td>
+        </tr>
+        <tr>
+            <td>Skill</td>
+            <td colspan="2">
+                <input type="checkbox" name="skill" value="Java"> Java
+                <input type="checkbox" name="skill" value="HTML"> HTML
+                <input type="checkbox" name="skill" value="Python"> Python
+                <input type="checkbox" name="skill" value="Microsoft Office"> Microsoft Office
+                <input type="checkbox" name="skill" value="Premiere"> Premiere
+            </td>
+        </tr>
+        <tr>
+            <td>Say something</td>
+            <td colspan="2"><textarea name="message" placeholder="Say something here." rows="4" style="width: 100%;"></textarea></td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">
+                <button type="submit">提交</button>
+                <button type="reset">重設</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
