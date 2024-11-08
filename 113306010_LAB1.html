@@ -5,43 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Page</title>
     <style>
-        /* 頁面主要樣式 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        
-        /* 表格樣式 */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-        th, td {
-            border: 1px solid #000;
-            padding: 8px;
-            text-align: left;
-        }
-        
-        /* 標題樣式 */
-        .caption {
-            text-align: center;
-            font-weight: bold;
-            font-size: 18px;
-        }
-        
         /* 個人照片樣式 */
         .profile-photo {
             width: 80px; /* 設定圖片寬度 */
             height: auto; /* 高度隨寬度自動縮放 */
             display: block;
-            margin: 0 auto; /* 移除圖片邊距 */
+            margin: 0 auto; /* 圖片置中 */
         }
     </style>
 </head>
 <body>
-
-    
     
     <table>
         <tr>
@@ -49,7 +22,7 @@
         </tr>
         <tr>
             <td rowspan="3" style="vertical-align: top;">
-                <img src=https://github.com/123-ne/113306010_Lab1/raw/main/NE.jpg  class="profile-photo" alt="personal photo">
+                <img src="https://github.com/123-ne/113306010_Lab1/raw/main/NE.jpg" class="profile-photo" alt="personal photo">
                 <p>Personal Photo</p>
             </td>
             <td>Name:</td>
@@ -94,7 +67,7 @@
             <td colspan="2"><textarea name="message" placeholder="Say something here." rows="4" style="width: 100%;"></textarea></td>
         </tr>
         <tr>
-            <td colspan="3" style="text-align: center;">
+            <td colspan="3" style="text-align: right;">
                 <button type="submit">提交</button>
                 <button type="reset">重設</button>
             </td>
